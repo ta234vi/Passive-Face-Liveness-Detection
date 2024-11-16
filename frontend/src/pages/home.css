@@ -1,0 +1,60 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Face Scanning Section Styles */
+.face-scanning-section {
+  text-align: center; /* Center text */
+}
+
+.face-scanning-section .slick-slider {
+  display: flex;
+  justify-content: center; /* Center slider horizontally */
+}
+.face-scanning-section img {
+    /* height: 300px; */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.face-scanning-section img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Slick Arrow Styles */
+.slick-arrow {
+  background-color: rgba(189, 9, 9, 0.8); /* Dark background */
+  border: none;
+  color: rgb(13, 35, 116); /* Arrow color */
+  font-size: 24px;
+  width: 50px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  border-radius: 50%; /* Rounded shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 20px;
+  z-index: 1000;
+  position: absolute; /* Position absolute for better placement */
+}
+
+.slick-prev {
+  left: 20px; /* Position from the left */
+}
+
+.slick-next {
+  right: 20px; /* Position from the right */
+}
+
+.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 1); /* Darker background on hover */
+}
+
+.slick-prev::before, .slick-next::before {
+  font-family: 'slick'; /* Ensure the font is loaded */
+  font-size: 24px; /* Adjust icon size */
+}
